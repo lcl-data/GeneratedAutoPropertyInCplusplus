@@ -9,6 +9,7 @@ if(!$f)
    print("$!\n");
    exit(1);
 }
+
 #stdout -> file
 open my $oldout, '>&', \*STDOUT or die "Cannot dup STDOUT: $!";
 open STDOUT, '>', 'output.txt' or die "Cannot reopen STDOUT: $!";
@@ -21,6 +22,7 @@ while($line=<$f>)
    $array[@array]=[split(/,/,$line,3)];
 }
 my $i;
+
 #for $i ( 0 .. $#array ) 
 #{            
 #	print $array[$i][0]." ".$array[$i][1]." ".$array[$i][2]."\n";
@@ -28,6 +30,7 @@ my $i;
 
 #    _declspec(property(put=setName,get=getname))               
 #       type name;
+
 for $i (0..$#array)
 { 
 	my $result = "_declspec(property(";
@@ -45,6 +48,7 @@ for $i (0..$#array)
 	$result = $result."\n    ".$type."  ".$name.";\n";
 	print $result;
 }
+
 #  void            setProgress(unsigned long inPercentDone);
 #unsigned char   getProgress() const;
 for $i (0..$#array)
@@ -66,6 +70,7 @@ for $i (0..$#array)
 	}
 	print $result;
 }
+
 #file -> stdout
 open STDOUT, '>&', $oldout or die "Cannot dup \$oldout: $!";
 my $status = system( "notepad.exe output.txt" );
