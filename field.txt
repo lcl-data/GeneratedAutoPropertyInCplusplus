@@ -1,0 +1,75 @@
+string,devModelName,r
+string,devManufacturerName,r
+string,ksnNumber,r
+string,devSerialNumber,r
+string,firmwareRevision,r
+EKAiOCacheProductCountryCodeEnum,countryCode,r
+EKAiOCacheProductLanguageCodeEnum,languageCode,rw
+unsigned long,vid,r
+unsigned long,pid,r
+bool,hasWiredNetwork,r
+bool,hasWirelessNetwork,r
+string,rbnVersion,r
+IntArray,flatBedresolutionsSupported,r
+IntArray,adfresolutionsSupported,r
+unsigned long,maxAddressBookEntries,r
+unsigned long,maxQuickDialEntries,r
+unsigned long,memDeviceId,r
+EKAiOCacheMemDeviceClassEnum,memDeviceClass,r
+EKAiOCacheMemDeviceStatusEnum,memDeviceStatus,r
+unsigned long,memDeviceCapacity,r
+unsigned long,memAvailable,r
+unsigned long,year,rw
+unsigned long,month,rw
+unsigned long,day,rw
+unsigned long,hour,rw
+unsigned long,minute,rw
+string,hostID,rw
+unsigned long,gmtOffset,rw
+bool,ifSettingTime,rw
+EKAiOCacheNetWorkTypeEnum,networkType,r
+EKAiOCacheNetWorkStatusEnum,networkStatus,r
+string,macAddress,r
+string,hostName,rw
+string,inetName,rw
+unsigned long,connectionTimeout,rw
+EKAiOCacheNetWorkLinkSpeedEnum,linkSpeed,rw
+unsigned long,channel,rw
+string,ssid,rw
+bool,ipv4Enabled,r
+string,domainName,rw
+EKAiOCacheIpv4LastConfiguredByEnum,lastConfiguredBy,r
+bool,allowDhcpConfig,rw
+bool,allowBootConfig,rw
+bool,allowAutoipConfig,rw
+unsigned long,dhcpLeaseTime,r
+EKIJ5000IPAddrType,ipv4Address,rw
+EKIJ5000IPAddrType,subnetMask,rw
+EKIJ5000IPAddrType,winsServer,rw
+EKIJ5000IPAddrType,defaultGateway,rw
+bool,bonjourEnabled,rw
+string,bonjourServiceName,re
+string,bonjourDomainName,r
+bool,lpdEnabled,rw
+bool,slpEnabled,rw
+bool,snmpEnabled,rw
+bool,readWriteEnabled,rw
+string,communitySetString,rw
+string,communityGetString,rw
+bool,publicAccessEnabled,rw
+bool,doorBellringing,r
+bool,donglePresent,r
+EKAiOCacheBlueToothSummaryEnum,summary,r
+bool,duplexerInstalled,r
+EKAiOCacheHostPrintMediaSourceEnum,mediaSource,rw
+EKAiOCacheHostPrintMediaTypeEnum,mediaType,r
+EKAiOCacheMediaSizeTypeEnum,hostPrintmediaSize,rw
+bool,adfInstalled,r
+string,scanhostName,r
+bool,scanhostScanPending,r
+unsigned long,maxAddressBookEntries,r
+unsigned long,maxQuickDialEntries,r
+unsigned long,maxPagesStored,r
+string,faxUserInfoName,rw
+string,faxUserInfoPhoneNumber,rw
+string,faxUserInfoFaxNumber,rw
